@@ -153,7 +153,7 @@ def decrypt_xm_file(from_file, output_path='./output'):
     tags["album"] = info.album
     tags["artist"] = info.artist
     print(tags.pprint())
-    # tags.save(buffer)
+    #tags.save(buffer)
     with open(output, "wb") as f:
         buffer.seek(0)
         f.write(buffer.read())
